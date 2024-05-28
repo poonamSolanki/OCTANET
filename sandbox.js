@@ -1,4 +1,4 @@
-// Adding todos
+
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.todos');
 const search = document.querySelector('.search input');
@@ -29,7 +29,7 @@ addForm.addEventListener('submit', e => {
     }
 });
 
-// Delete Todos
+
 list.addEventListener('click', e => {
 
     if (e.target.classList.contains('delete')) {
@@ -49,7 +49,7 @@ const filterTodos = (term) => {
         .forEach((todo) => todo.classList.add('filtered'));
 };
 
-// Keyup Event
+
 search.addEventListener('keyup', () => {
     const term = search.value.trim().toLowerCase();
     filterTodos(term);
